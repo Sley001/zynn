@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Smoke Shop</title>
+    <style>
+        /* ការកំណត់ទូទៅ និងផ្ទៃខាងក្រោយ */
+        body {
+            background-color: #0b0b0b;
+            color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            /* ដាក់រូបភាពផ្សែងជាផ្ទៃខាងក្រោយ */
+            background-image: url('image_a76465.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* របារផ្នែកខាងលើ (Navigation Bar) */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 1px solid #3a2e18;
+        }
+        .logo { font-size: 24px; font-weight: bold; color: #d4af37; letter-spacing: 2px;}
+        .cart { font-size: 18px; }
+
+        /* ផ្នែកក្បាល (Hero Section) */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .hero-title {
+            font-size: 40px;
+            color: #d4af37; /* ពណ៌មាស */
+            margin-bottom: 10px;
+        }
+        
+        /* កន្លែងដាក់ផលិតផល (Product Grid) */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        /* កាតផលិតផលនីមួយៗ (Product Card) */
+        .product-card {
+            background: rgba(20, 20, 20, 0.85);
+            border: 1px solid #d4af37; /* បន្ទាត់ពណ៌មាសតំណាងឲ្យក្បាច់ */
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+        }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .price { color: #d4af37; font-size: 20px; margin: 10px 0; }
+
+        /* ប៊ូតុងបញ្ជាទិញ */
+        .btn-buy {
+            background-color: #d4af37;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn-buy:hover { background-color: #b5952f; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="logo">CLASSIC SMOKE</div>
+        <div class="cart">🛒 Cart (0)</div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="hero-title">បណ្តុំផលិតផលប្រណីត</h1>
+        <p>គុណភាពខ្ពស់ សម្រាប់បទពិសោធន៍ដ៏ល្អឥតខ្ចោះ</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container">
+        <div class="product-grid">
+            
+            <!-- ផលិតផលទី១ -->
+            <div class="product-card">
+                <!-- អ្នកអាចដាក់រូបភាពផលិតផលពិតនៅទីនេះ -->
+                <div class="product-img" style="background-color: #222;">រូបភាពទំនិញទី១</div>
+                <h3>Vintage Tobacco Blend</h3>
+                <div class="price">$15.00</div>
+                <button class="btn-buy">បញ្ចូលទៅកន្ត្រក</button>
+            </div>
+
+            <!-- ផលិតផលទី២ -->
+            <div class="product-card">
+                <div class="product-img" style="background-color: #222;">រូបភាពទំនិញទី២</div>
+                <h3>Brass Pipe</h3>
+                <div class="price">$45.00</div>
+                <button class="btn-buy">បញ្ចូលទៅកន្ត្រក</button>
+            </div>
+
+            <!-- ផលិតផលទី៣ -->
+            <div class="product-card">
+                <div class="product-img" style="background-color: #222;">រូបភាពទំនិញទី៣</div>
+                <h3>Aged Maduro Cigars</h3>
+                <div class="price">$65.00</div>
+                <button class="btn-buy">បញ្ចូលទៅកន្ត្រក</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

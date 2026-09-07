@@ -1,0 +1,2 @@
+Tesseract.js 7 / Tesseract.js-core 7: Apache-2.0, https://github.com/naptha/tesseract.js
+English and Khmer traineddata distributed by @tesseract.js-data packages (package license: MIT), https://github.com/naptha/tessdata
